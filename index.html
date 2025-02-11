@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeHaven - Motorbikes and Accessories</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header id="navbar">
+
+        <nav class="main-nav">
+            <div class="nav-logo" data-aos="fade-in"><a href="/"><img src="./assets/logo.png" alt="BikeHaven Logo"></a></div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li>
+                    <div class="nav-right-icons">
+                        <i class='bx bx-cart-alt bx-sm'></i>
+                        <i class='bx bx-search bx-sm search-icon' onclick="toggleSearch()"></i>
+                    </div>                        
+                </li>
+                <div class="search-container">
+                    <form action="">
+                        <input type="text" placeholder="Search.." name="search" id="search">
+                        <button type="submit"><i class='bx bx-search'></i></button>
+                        <div class="nav-right-icons">
+                            <i class='bx bx-x bx-sm search-icon' onclick="toggleSearch()"></i>
+                        </div>
+                    </form>
+                </div>              
+            </ul>
+        </nav>
+
+        <nav class="sticky-nav">
+            <div class="nav-logo"><a href="/"><img src="./assets/logo.png" alt="BikeHaven Logo"></a></div>
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="shop"><a href="#shop">Shop</a></li>
+                <li class="contact"><a href="#contact">Contact Us</a></li>
+                <li class="blogs"><a href="#blogs">Blogs</a></li>
+                <li>
+                    <div class="nav-right-icons">
+                        <i class='bx bx-cart-alt bx-sm'></i>
+                        <i class='bx bx-search bx-sm search-icon' onclick="toggleSearch()"></i>
+                    </div>                        
+                </li>
+                <div class="search-container">
+                    <form action="">
+                        <input type="text" placeholder="Search.." name="search" id="search">
+                        <button type="submit"><i class='bx bx-search'></i></button>
+                        <div class="nav-right-icons">
+                            <i class='bx bx-x bx-sm search-icon' onclick="toggleSearch()"></i>
+                        </div>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="hero-section">
+
+        <div class="left-side"></div>
+        <div class="right-side" data-aos="fade-left"></div>
+
+        <div class="container">
+
+            <div class="hero-cta">
+                <h2 data-aos="fade-up">RIDING INTO FUTURE<br>WITH HONDA BIKES</h2>
+                <h4>Your one-stop destination for top-notch<br>motorbikes and accessories.</h4>
+                <div class="btn-wrapper">
+                    <a href="#shop"><span>SHOP NOW</span></a>
+                    <a href="#contact" class="inverted"><span>CONTACT US</span></a>
+                </div>
+
+                <div class="pagination">
+                    <input type="radio" name="circleBtn" id="btn1" checked>
+                    <input type="radio" name="circleBtn" id="btn2">
+                    <input type="radio" name="circleBtn" id="btn3">
+                    <input type="radio" name="circleBtn" id="btn4">
+                </div>
+            </div>
+
+            <div class="slider-1">
+                <h2 id="bikeName">HORNET</h2>
+                <img id="bikeImage" src="./assets/default.png" alt="Bike Image">
+
+                <div class="bike-spec">
+                    <div class="spec-item">
+                        <h4>ENGINE</h4>
+                        <h3 id="engineSpec">249</h3><span>CC</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <h4>POWER</h4>
+                        <h3 id="powerSpec">40</h3><span>HP</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <h4>0-100 KM/H</h4>
+                        <h3 id="accelerationSpec">5.9</h3><span>SEC</span>
+                    </div>
+
+                    <div class="spec-item">
+                        <h4>YEAR</h4>
+                        <h3 id="yearSpec">2006</h3>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <h4>PRICE</h4>
+                        <span>Rs</span><h3 id="priceSpec">1.8M</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="brands-logo">
+        <div class="logo-slide" style="width: 90px;" data-aos="zoom-in-up" data-aos-delay="0">
+            <img src="./assets/honda-logo.png" alt="">
+        </div>
+        <div class="logo-slide" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="./assets/hrc-logo.png" alt="">
+        </div>
+        <div class="logo-slide" style="width: 130px;" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="./assets/brembo-logo.png" alt="">
+        </div>
+        <div class="logo-slide" style="width: 100px;" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="./assets/liqui-moly-logo.png" alt="">
+        </div>
+        <div class="logo-slide" data-aos="zoom-in-up" data-aos-delay="600">
+            <img src="./assets/motul-logo.png" alt="">
+        </div>
+        <div class="logo-slide" data-aos="zoom-in-up" data-aos-delay="750">
+            <img src="./assets/axor-helmets-logo.png" alt="">
+        </div>
+        <div class="logo-slide" data-aos="zoom-in-up" data-aos-delay="900">
+            <img src="./assets/agv-logo.png" alt="">
+        </div>
+        <div class="logo-slide" style="width: 130px;" data-aos="zoom-in-up" data-aos-delay="1050">
+            <img src="./assets/bridgestone-logo.png" alt="">
+        </div>
+    </section>
+
+    <section id="bg-video-section">
+        <div class="bg-video-wrap">
+            <video src="./assets/video-bg.webm" loop muted autoplay></video>
+            <div class="overlay"></div>
+
+            <div class="hero-cta">
+                <h1 data-aos="fade-up">“Feel the wind,<br>embrace the ride.”</h1>
+                <h3>BikeHaven celebrates the spirit of every rider.</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="riding-gear">
+        <div class="container">
+
+            <div class="title-section">
+                <h2 data-aos="fade-right">UPGRADE YOUR RIDING GEAR</h2>
+            </div>
+
+            <div class="box-container">
+                
+                <div class="cta-card">
+                    <div class="img-container">
+                        <h5>RACING BOOTS</h5>
+                        <h4>Style & Safety</h4>
+                        <img src="./assets/boot-img.png" alt="">
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="inverted"><span>SHOP BOOTS</span></a>
+                    </div>
+                </div>
+                
+                <div class="cta-card">
+                    <div class="img-container">
+                        <h5>DURABLE JACKTES</h5>
+                        <h4>Comfort & Style</h4>
+                        <img src="./assets/jacket-img.png" alt="">
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="inverted"><span>SHOP JACKTES</span></a>
+                    </div>
+                </div>
+                
+                <div class="cta-card">
+                    <div class="img-container">
+                        <h5>PREMIUM GLOVES</h5>
+                        <h4>Control & Comfort</h4>
+                        <img src="./assets/glove-img.png" alt="">
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="inverted"><span>SHOP GLOVES</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+        
+    <section id="helmets">
+        <div class="helmet-section">
+            <div class="helmet-section-left">
+                <h2 data-aos="fade-up">Safeguard Your Ride with Best Helmets</h2>
+                <p>Discover unparalleled protection and style with our range of helmets. Engineered with advanced technology and innovative designs, our helmets ensure your safety on every ride while making a bold statement on the road.</p>
+                <div class="btn-wrapper">
+                    <a href="#" class="inverted"><span>SHOP HELMETS</span></a>
+                </div>
+            </div>
+            <div class="video-wrap">
+                <video src="./assets/helmet.webm" loop muted autoplay></video>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="container">
+
+            <div class="title-section">
+                <h2 data-aos="fade-right">BEST SELLERS</h2>
+            </div>
+
+            <div class="product-container">
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-1.png" alt="">
+                        <span class="sale">-20%</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">HELMETS</h5>
+                        <h4>AXOR HELMET</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.48,000</h4>
+                            <p><s>&nbsp;Rs.60,000&nbsp;</s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <h5>19 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-2.png" alt="">
+                        <span class="sale">-20%</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">JACKETS</h5>
+                        <h4>SPORT JACKET</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.28,000</h4>
+                            <p><s>&nbsp;Rs.35,000&nbsp;</s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <h5>46 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-3.png" alt="">
+                        <span class="sold-out">SOLD OUT</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">EXHAUSTS</h5>
+                        <h4>AKRAPOVIC EXHAUST</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.80,000</h4>
+                            <p><s></s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <h5>15 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-4.png" alt="">
+                        <span class="sale">-20%</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">GLOVES</h5>
+                        <h4>SPORT GLOVES</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.12,000</h4>
+                            <p><s>&nbsp;Rs.15,000&nbsp;</s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <h5>35 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-5.png" alt="">
+                        <span class="sale">-20%</span>
+                        <span class="sold-out">SOLD OUT</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">BOOTS</h5>
+                        <h4>BOOTS</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.20,000</h4>
+                            <p><s>&nbsp;Rs.25,000&nbsp;</s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★☆☆</span>
+                            <h5>22 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-6.png" alt="">
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">TOOLS</h5>
+                        <h4>MECHANIC KIT</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.9,000</h4>
+                            <p><s></s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <h5>5 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-7.png" alt="">
+                        <span class="sale">-20%</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">JACKETS</h5>
+                        <h4>JACKET</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.14,500</h4>
+                            <p><s>&nbsp;Rs.18,000&nbsp;</s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★☆☆</span>
+                            <h5>67 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-8.png" alt="">
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">GLOVES</h5>
+                        <h4>GLOVES</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.6,000</h4>
+                            <p><s></s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★☆</span>
+                            <h5>15 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" onclick="location.href='#'">
+                    <div class="img-container">
+                        <img src="./assets/shop-img-9.png" alt="">
+                        <span class="sale">-20%</span>
+                        <span class="sold-out">SOLD OUT</span>
+                        <div class="btn-wrapper show">
+                            <a href="#" class="inverted"><span>ADD TO CART</span></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="product-title">
+                        <h5 class="product-category">BOOTS</h5>
+                        <h4>SPORT BOOTS</h4>
+                    </div>
+                    <div class="info-container">
+                        <div class="price">
+                            <h4>Rs.40,000</h4>
+                            <p><s>&nbsp;Rs.50,000&nbsp;</s></p>
+                        </div>
+                        <div class="rating">
+                            <span>★★★★★</span>
+                            <h5>12 REVIEWS</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="feature" data-aos="fade-up" data-aos-delay="0">
+                <img src="./assets/delivery-truck.png" alt="Free Shipping">
+                <h4>FREE SHIPPING</h4>
+                <p>Free on orders over Rs.10,000</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                <img src="./assets/refund.png" alt="Money Guarantee">
+                <h4>MONEY GUARANTEE</h4>
+                <p>30 Days Moneyback</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="600">
+                <img src="./assets/24-hours-support.png" alt="24/7 Support">
+                <h4>24/7 SUPPORT</h4>
+                <p>Friendly Support 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+
+            <div class="title-section">
+                <h2 data-aos="fade-right">SEE OUR CLIENT’S FEEDBACK</h2>
+            </div>
+
+            <div class="testimonial">
+                <div class="client-img"></div>
+                <div class="feedback-container">
+                    <p>“As a proud owner of the Honda Hornet 250, I can confidently say that this bike is a game-changer. Its sleek design, powerful engine, and nimble handling make every ride an exhilarating experience. Whether I'm cruising through city streets or carving up winding roads, the Hornet 250 delivers unmatched performance and reliability. Plus, with BikeHaven's exceptional service and support, my passion for riding has reached new heights. Join the BikeHaven community and unleash the thrill of the ride!”</p>
+                    <div class="client-name">
+                        <h4>Anuhas D.</h4>
+                        <h5>Honda Hornet 250 Enthusiast</h5>
+                    </div>
+                    <div class="pagination">
+                        <div class="numbering"><span class="current-number">01</span><br>/ 08</div>
+                        <button class="previous"><i class='bx bx-chevron-left bx-md'></i></button>
+                        <button class="next"><i class='bx bx-chevron-right bx-md'></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h3 data-aos="fade-up">Ready to own your dream bike?</h3>
+            <p>Subscribe now for exclusive updates and offers.</p>
+            <div class="newsletter-container">
+                <form action="">
+                    <input type="email" name="email" id="input-email" placeholder="Email" required>
+                    <button type="submit"><span>SUBSCRIBE</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+
+            <div class="title-section">
+                <h2 data-aos="fade-right">CONTACT US</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="left-section">
+                    <h4>Have a question, comment, or just want to say hello?</h4>
+                    <p>We'd love to hear from you! Feel free to reach out to us using the contact information below or fill out the form, and we'll get back to you as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="icon-list">
+                            <i class='bx bx-map-pin bx-sm'></i>
+                            <p>123/A, Galle Road<br>Colombo, Sri Lanka</p>
+                        </div>
+                        <div class="icon-list">
+                            <i class='bx bx-phone-call bx-sm'></i>
+                            <p>(+94) 71 234 5678<br>(+94) 11 234 5678</p>
+                        </div>
+                        <div class="icon-list">
+                            <i class='bx bx-envelope bx-sm'></i>
+                            <p>info@bikehaven.com</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-facebook-circle bx-md'></i></a>
+                        <a href="#"><i class='bx bxl-instagram bx-md'></i></a>
+                        <a href="#"><i class='bx bxl-twitter bx-md'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin-square bx-md'></i></a>                    
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <form action="#" method="post" class="contact-form">
+                        <div class="input-fields">
+                            <input type="text" name="name" placeholder="Your name" id="inputName" maxlength="100" required>
+                            <input type="email" name="email" placeholder="Your email" id="inputEmail" maxlength="50" required>
+                            <textarea name="message" placeholder="Message" id="inputMessage" maxlength="1000" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn secondary"><span><i class='icon bx bx-send'></i>Send message</span></button>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <div class="container">
+
+            <div class="title-section">
+                <h2 data-aos="fade-right">RECENT BLOGS</h2>
+            </div>
+
+            <div class="blog-container">
+                
+                <div class="blog-card">
+                    <div class="img-container">
+                        <img src="./assets/blog-img-1.jpg" alt="Blog Image">
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="blog-date">FEBRUARY 15, 2024</h5>
+                        <h4 class="blog-title"><a href="#">CLOSEOUT MOTOCROSS GEAR</a></h4>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ducimus distinction...</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="inverted"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="img-container">
+                        <img src="./assets/blog-img-2.jpg" alt="Blog Image">
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="blog-date">FEBRUARY 14, 2024</h5>
+                        <h4 class="blog-title"><a href="#">REKLUSE CORE EXP CLUTCH REVIEW</a></h4>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ducimus distinction...</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="inverted"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="img-container">
+                        <img src="./assets/blog-img-3.jpg" alt="Blog Image">
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="blog-date">FEBRUARY 13, 2024</h5>
+                        <h4 class="blog-title"><a href="#">SUPERCROSS SCHEDULE</a></h4>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ducimus distinction...</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="inverted"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="img-container">
+                        <img src="./assets/blog-img-4.jpg" alt="Blog Image">
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="blog-date">FEBRUARY 12, 2024</h5>
+                        <h4 class="blog-title"><a href="#">HOW TO SETUP SUSPENSION</a></h4>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ducimus distinction...</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="inverted"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="blog-card">
+                    <div class="img-container">
+                        <img src="./assets/blog-img-5.jpg" alt="Blog Image">
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="blog-date">FEBRUARY 11, 2024</h5>
+                        <h4 class="blog-title"><a href="#">DRD EXHAUST REVIEW</a></h4>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ducimus distinction...</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="inverted"><span>READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="blog-card">
+                    <div class="img-container">
+                        <img src="./assets/blog-img-6.jpg" alt="Blog Image">
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="blog-date">FEBRUARY 10, 2024</h5>
+                        <h4 class="blog-title"><a href="#">EXCEED EXPECTATIONS</a></h4>
+                        <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus ducimus distinction...</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="inverted"><span>READ MORE</span></a>
+                        </div>
+                    </div>                
+                
+                    <!-- <div class="view-more-card">
+                        <h3>Curious for more?</h3>
+                        <p>Find More Interesting Articles</p>
+                        <div class="btn-wrapper">
+                            <a href="#"><span>VIEW ALL BLOGS &nbsp; 🡲</span></a>
+                        </div>
+                    </div> -->
+                </div>                
+                
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+            <div class="left-section">
+                <div class="footer-logo" data-aos="fade-in"><a href="/"><img src="./assets/logo.png" alt="BikeHaven Logo"></a></div>
+                <p>Your one-stop destination for top-notch<br>motorbikes and accessories.</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook-circle bx-md'></i></a>
+                    <a href="#"><i class='bx bxl-instagram bx-md'></i></a>
+                    <a href="#"><i class='bx bxl-twitter bx-md'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square bx-md'></i></a>                    
+                </div>
+            </div>
+
+            <div class="right-section">
+
+                <div class="row-1">
+                    <div class="section-1">
+                        <h4>REACH US</h4>
+                        <div class="icon-list">
+                            <i class='bx bx-map-pin bx-sm'></i>
+                            <p>123/A, Galle Road<br>Colombo, Sri Lanka</p>
+                        </div>
+                        <div class="icon-list">
+                            <i class='bx bx-phone-call bx-sm'></i>
+                            <p>(+94) 71 234 5678<br>(+94) 11 234 5678</p>
+                        </div>
+                        <div class="icon-list">
+                            <i class='bx bx-envelope bx-sm'></i>
+                            <p>info@bikehaven.com</p>
+                        </div>
+                    </div>
+
+                    <div class="section-2">
+                        <h4>OUR LOCATIONS</h4>
+                        <img src="./assets/footer-map-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="section-3">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="#blogs">Blogs</a></li>         
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="section-4" id="copyright">COPYRIGHT © <span id="year"></span> - BIKEHAVEN</div>
+                </div>
+
+                <div class="footer-bg" data-aos="fade-left"></div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <button onclick="topFunction()">
+            <i class='bx bx-chevron-up' ></i>
+        </button>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-cubic',
+        duration: 800,
+      });
+    </script>
+</body>
+</html>
